@@ -5,7 +5,7 @@ Tools to analyze proteome-wide protein folding experimental data from mass spect
 
 Analyzer code can be run with a stock install of anaconda, which should contain all the required dependencies. Raw ion intensity data need to be first exported from the .pdResult file to a three-level hierarchy (protein > peptide group > consensus feature) to excel and then saved as a .txt file. Analyzer code and associated meta-data files should be moved to the same directory as raw ion intensity data .txt files to run Analyzer code. 
 
-##Input and Output for Analyzer 
+## Input and Output for Analyzer 
 
 For example, once in the correct directory, in ipython, the following command below can be used to run the analyzer code. The exported raw ion intensity data .txt file is inputted as the first argument after the Analyzer code.  
 
