@@ -7,7 +7,7 @@ Analyzer code can be run with a stock install of anaconda, which should contain 
 
 ## Input and Output for Analyzer 
 
-For example, once in the correct directory, in ipython, the following command below can be used to run the analyzer code. The exported raw ion intensity data .txt file is inputted as the first argument after the Analyzer code.  
+Once in the correct directory, in ipython, the following command below can be used to run the analyzer code. The exported raw ion intensity data .txt file is inputted as the first argument after the Analyzer code.  
 
 run Analyzer_V18.py protein_lfq.txt
 
