@@ -222,9 +222,7 @@ charge_states_seen = []
 peptideLip_output_file.write( 'GeneName\tLocus Tag\tAccession\tPeptide Sequence\tproteinaseKsite\tLocations\tComplexes\tSubunitCounts\tCopy Number\tMolecular Weight\tpI\tpSup\tdpSup_30_42\tdpSup_42_46\tArchitectures\tXgroups\tTgroups\tDomainRanges\tNumDomains\tpercentWithinDomain\tpercentDisordered\tdisorderedRegions\torderedRegions\tCCT_sites\tHsp70_sites\tSGMayorLab\tSGParkerLab\tSGBukauLab\tSGDrummondLab\tDomain Location\tPosition in Domain\t' + '\t'.join('PeptideRatio'+str(s) for s in range(1,numConditions)) + '\t' + '\t'.join('NormPeptideRatio'+str(s) for s in range(1,numConditions)) + '\t' + '\t'.join('PeptidePValue'+str(s) for s in range(1,numConditions)) + '\t' + '\t'.join('RefoldedCoeffVar'+str(s) for s in range(1,numConditions))+ '\n' )
 
 #Loop through Peptide LiP File and append AbundanceRatio Data to it
-#for line in peptideLip_file:
-for x in range(177):
-    line = next(peptideLip_file)
+for line in peptideLip_file:
     info_in_line = line.split('\t')
     if info_in_line[0] == 'FALSE': #Checks if this line is a protein
         Pep_Seq_thisLine = info_in_line[3]
